@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guess Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="main">
-        <div class="card">
-            <div class="topbar">
-                <p>attmpt : <span id="attmpt">--</span></p>
-                <p>win : <span id="win">0</span></p>
-                <p>lose : <span id="lose">0</span></p>
-                <p>total : <span id="total">0</span></p>
-            </div>
-            <div class="start">
-                <p>start</p>
-            </div>
 
-            <div class="game-dis">
-                <p>guess the Num form 0 to 100</p>
-            </div>
-            <div class="game">  
-                <input type="number" name="" id="">
-                <button>check</button>
-            </div>
-            <div class="game-result">
-               
-            </div>
+<div class="main">
 
-        </div>
+  <div class="card">
+
+    <!-- Top Bar -->
+    <div class="topbar">
+      <p>Attempt : <span id="attmpt">--</span></p>
+      <p>Win : <span id="win">0</span></p>
+      <p>Lose : <span id="lose">0</span></p>
+      <p>Total : <span id="totale">0</span></p>
     </div>
-    <script src="js.js"></script>
+
+    <!-- Start Button -->
+    <div class="start">
+      <p>Start</p>
+    </div>
+
+    <!-- Game Instruction -->
+    <div class="game-dis">
+      <p>Guess the number from 0 to 100</p>
+    </div>
+
+    <!-- Game Input -->
+    <div class="game">
+      <input type="number" id="guessInput" placeholder="Enter number">
+      <button id="checkBtn">Check</button>
+    </div>
+
+    <!-- Result -->
+    <div class="game-result"></div>
+
+  </div>
+
+</div>
+
+<script src="js.js"></script>
+
 </body>
 </html>
