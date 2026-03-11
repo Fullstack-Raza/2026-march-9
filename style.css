@@ -52,8 +52,8 @@ body {
   border-radius: 20px;
   background-color: blueviolet;
   transform-origin: center;
-  transition: transform .2s ease;
-  display: none;
+  transition: transform all .5s ease;
+  display: inherit;
 }
 
 .start:hover{
@@ -61,18 +61,21 @@ body {
   transform: translate(-50%, -50%) scale(.98);
 }
 .start p{
-    font-size: 30px;
-    text-transform: uppercase;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .game-dis{
   position: absolute;
+  display: none;
   top: 30%;
   left: 50%;
   transform: translate(-50%,-50%);
+  transition: all .5s ease;
 }
 .game-dis p{
-font-size: 20px;
+  transition: all .5s ease;
+  font-size: 20px;
 }
 
 .game{
@@ -81,7 +84,9 @@ font-size: 20px;
   left: 50%;
   transform: translate(-50%,-50%);
   display: flex;
+  display: none;
   gap: 10px;
+  transition: all .5s ease;
 }
 
 .game input{
